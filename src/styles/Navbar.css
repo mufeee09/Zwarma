@@ -1,0 +1,132 @@
+.navbar {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.navbar.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-image {
+  width: 40px;
+  height: 60px;
+  background-color: var(--primary-color);
+  mask-image: url("data:image/svg+xml,%3Csvg width='40' height='60' viewBox='0 0 40 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='60' rx='2' fill='%23FFCC00'/%3E%3Crect x='5' y='5' width='30' height='5' fill='%23000'/%3E%3Crect x='5' y='15' width='30' height='5' fill='%23000'/%3E%3Crect x='5' y='25' width='30' height='5' fill='%23000'/%3E%3Crect x='5' y='35' width='30' height='5' fill='%23000'/%3E%3Crect x='5' y='45' width='30' height='5' fill='%23000'/%3E%3Ccircle cx='20' cy='0' r='8' fill='%23FF0000'/%3E%3C/svg%3E");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.logo-text h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.logo-text p {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color var(--transition-speed);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary-color);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width var(--transition-speed);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+  color: var(--primary-color);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 1rem;
+  }
+
+  .logo-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--background-dark);
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    transform: translateY(-150%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform var(--transition-speed), opacity var(--transition-speed), visibility var(--transition-speed);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
