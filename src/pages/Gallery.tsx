@@ -140,20 +140,20 @@ import img14 from "../images/IMG-20250204-WA0032.jpg"
 
 
 const images = [
-  { src: img1, title: 'Ms Marvel' },
-  { src: img2, title: 'Starlord' },
-  { src: img3, title: 'Spider-Man' },
-  { src: img4, title: 'Black Panther' },
-  { src: img5, title: 'Venom' },
-  { src: img6, title: 'Thanos' },
-  { src: img7, title: 'Iron Man' },
-  { src: img8, title: 'Thor' },
-  { src: img9, title: 'Captain America' },
-  { src: img10, title: 'Black Widow' },
-  { src: img11, title: 'Black Widow' },
-  { src: img12, title: 'Black Widow' },
-  { src: img13, title: 'Black Widow' },
-  { src: img14, title: 'Black Widow' },
+  { src: img1, title: '' },
+  { src: img2, title: '' },
+  { src: img3, title: '' },
+  { src: img4, title: '' },
+  { src: img5, title: '' },
+  { src: img6, title: '' },
+  { src: img7, title: '' },
+  { src: img8, title: '' },
+  { src: img9, title: '' },
+  { src: img10, title: '' },
+  { src: img11, title: '' },
+  { src: img12, title: '' },
+  { src: img13, title: '' },
+  { src: img14, title: '' },
 ];
 
 const ImageGrid = () => {
