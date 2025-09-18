@@ -139,7 +139,9 @@ const Home = () => {
             Learn more about us <ArrowRight size={16} />
           </Link>
         </div>
-        <div className="about-image"></div>
+        <div className="about-image">
+           <img src={img4} alt="Inside Zwarma Restaurant" />
+        </div>
       </section>
 
       <section className="special-dishes">

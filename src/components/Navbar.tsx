@@ -36,11 +36,13 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="/" className="logo-container">
-          <div className="logo-image"></div>
-          <div className="logo-text">
+          <div className="logo-image">
+            <img src="/src/images/Rectangle 1.svg" alt="Zwarma Logo" />
+          </div>
+          {/* <div className="logo-text">
             <h1>zwarma</h1>
             <p>The Shawarma Makers</p>
-          </div>
+          </div> */}
         </Link>
 
         <div className="menu-button" onClick={toggleMenu}>

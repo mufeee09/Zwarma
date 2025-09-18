@@ -1,15 +1,21 @@
 .navbar {
-  background-color: var(--background-dark);
+  background-color: rgb(0, 0, 0); /* semi-transparent from the start */
   color: var(--text-light);
   position: sticky;
   top: 0;
   z-index: 1000;
   transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari */
 }
 
 .navbar.scrolled {
+  /* keep the same glass effect, only add shadow */
+  background-color: rgba(0, 0, 0, 0.4); 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .navbar-container {
   display: flex;
@@ -27,13 +33,20 @@
 }
 
 .logo-image {
-  width: 40px;
-  height: 60px;
-  background-color: var(--primary-color);
-  mask-image: url("data:image/svg+xml,%3Csvg width='40' height='60' viewBox='0 0 40 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='60' rx='2' fill='%23FFCC00'/%3E%3Crect x='5' y='5' width='30' height='5' fill='%23000'/%3E%3Crect x='5' y='15' width='30' height='5' fill='%23000'/%3E%3Crect x='5' y='25' width='30' height='5' fill='%23000'/%3E%3Crect x='5' y='35' width='30' height='5' fill='%23000'/%3E%3Crect x='5' y='45' width='30' height='5' fill='%23000'/%3E%3Ccircle cx='20' cy='0' r='8' fill='%23FF0000'/%3E%3C/svg%3E");
-  mask-repeat: no-repeat;
-  mask-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* remove fixed width/height and mask */
 }
+
+.logo-image img {
+  height: 60px;    /* navbar height */
+  width: auto;     /* auto width keeps aspect ratio */
+  object-fit: contain;
+  display: block;
+}
+
+
 
 .logo-text h1 {
   font-size: 1.8rem;
