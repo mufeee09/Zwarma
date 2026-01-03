@@ -123,20 +123,20 @@
 
 import { useEffect, useRef } from 'react';
 import '../styles/Gallery.css';
-import img1 from "../images/IMG-20250204-WA0010.jpg"
-import img2 from "../images/IMG-20250204-WA0014.jpg"
-import img3 from "../images/IMG-20250204-WA0015.jpg"
-import img4 from "../images/IMG-20250204-WA0016.jpg"
-import img5 from "../images/IMG-20250204-WA0017.jpg"
-import img6 from "../images/IMG-20250204-WA0018.jpg"
-import img7 from "../images/IMG-20250204-WA0019.jpg"
-import img8 from "../images/IMG-20250204-WA0022.jpg"
-import img9 from "../images/IMG-20250204-WA0026.jpg"
-import img10 from "../images/IMG-20250204-WA0029.jpg" 
+import img1 from "../images/IMG-20250204-WA0011.webp"
+import img2 from "../images/IMG-20250204-WA0014.webp"
+import img3 from "../images/IMG-20250204-WA0015.webp"
+import img4 from "../images/IMG-20250204-WA0016.webp"
+import img5 from "../images/IMG-20250204-WA0017.webp"
+import img6 from "../images/IMG-20250204-WA0018.webp"
+import img7 from "../images/IMG-20250204-WA0019.webp"
+import img8 from "../images/IMG-20250204-WA0022.webp"
+import img9 from "../images/IMG-20250204-WA0026.webp"
+import img10 from "../images/IMG-20250204-WA0029.webp" 
 import img11 from "../images/IMG-20250204-WA0030.jpg"
 import img12 from "../images/IMG-20250204-WA0031.jpg"
-import img13 from "../images/IMG-20250204-WA0033.jpg"
-import img14 from "../images/IMG-20250204-WA0032.jpg"
+import img13 from "../images/IMG-20250204-WA0033.webp"
+import img14 from "../images/IMG-20250204-WA0032.webp"
 
 
 const images = [

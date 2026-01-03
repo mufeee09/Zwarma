@@ -47,13 +47,17 @@ const About = () => {
         <div className="about-content">
           <h2>Our Story</h2>
           <p>
-            Established in 2015, Zwarma brings the authentic flavors of Middle Eastern cuisine to Mayiladuthurai. 
-            What started as a small family-owned shawarma stand has grown into a beloved restaurant that serves 
-            a variety of Middle Eastern delicacies.
+            Opened in 2021, Zwarma is a franchise restaurant born out of our passion for bringing 
+            authentic Middle Eastern flavors to our community. After connecting with the Zwarma brand, 
+            we proudly launched our outlet to serve delicious, high-quality food with consistent taste and freshness.
+
           </p>
           <p>
-            Our founder, inspired by travels across the Middle East, wanted to bring those vibrant flavors to our 
-            community. Every recipe has been carefully crafted to preserve authenticity while adding our own unique touch.
+
+            At Zwarma, we specialize in flavorful shawarmas, our signature Al-Faham chicken, sizzlers, 
+            refreshing beverages, and aromatic biriyani. Every dish is prepared with carefully selected 
+            ingredients to deliver a satisfying and memorable dining experience, blending authentic 
+            flavors with a modern touch.
           </p>
         </div>
         <div className="about-image"></div>

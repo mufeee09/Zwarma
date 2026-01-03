@@ -169,7 +169,7 @@
 
 /* ========= VARIABLES ========= */
 :root {
-  --main-color: #ed1c24;
+  --main-color: #000000;
   --border-width: .24vw;
   --gutter: 2vw;
 }
@@ -359,7 +359,7 @@ figcaption:after {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(237, 28, 36, 0.4);
+  /* background: rgba(0, 0, 0, 0.4); */
   height: 150%;
   transition: .3s;
   transform: scaleY(0);
@@ -373,7 +373,7 @@ figcaption:before {
 
 figcaption:after {
   height: 120%;
-  background: rgba(237, 28, 36, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
 }
 

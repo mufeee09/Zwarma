@@ -22,9 +22,13 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="copyright">
+      {/* <div className="copyright">
+        <p>&copy; {new Date().getFullYear()} Zwarma. All rights reserved.</p>
+      </div> */}
+      <div className="footer-copyright">
         <p>&copy; {new Date().getFullYear()} Zwarma. All rights reserved.</p>
       </div>
+
     </footer>
   );
 };

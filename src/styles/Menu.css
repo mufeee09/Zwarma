@@ -97,20 +97,47 @@
 }
 
 .menu-item {
-  padding: var(--spacing-md);
-  border: 1px solid rgba(255, 204, 0, 0.2);
-  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px;
+  border-radius: 14px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 204, 0, 0.08),
+    rgba(0, 0, 0, 0.9)
+  );
+  border: 1px solid rgba(255, 204, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .menu-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 204, 0, 0.15);
+} */
+
+.menu-item-left img {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 204, 0, 0.4);
+}
+
+.menu-item-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: transform var(--transition-speed), background-color var(--transition-speed);
-  background-color: rgba(255, 204, 0, 0.05);
+  flex: 1;
 }
 
-.menu-item:hover {
-  background-color: rgba(255, 204, 0, 0.1);
-  transform: translateX(5px);
+
+.menu-item-right h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
 }
+
 
 .item-info h3 {
   font-size: 1.3rem;
@@ -124,11 +151,9 @@
 }
 
 .item-price {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
   color: var(--primary-color);
-  min-width: 80px;
-  text-align: right;
 }
 
 @media (min-width: 768px) {
@@ -139,24 +164,44 @@
   .desktop-category-list {
     display: flex;
   }
+
+   .menu-item {
+    gap: 12px;
+  }
+
+  .menu-item-left img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .menu-item-right h3 {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .menu-header h1 {
-    font-size: 2.5rem;
-  }
-  
   .menu-item {
+    align-items: center;
+  }
+
+  .menu-item-right {
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--spacing-sm);
+    gap: 4px;
   }
-  
+
+  .menu-item-right h3 {
+    font-size: 1.05rem;
+  }
+
   .item-price {
-    align-self: flex-end;
+    font-size: 1rem;
+    align-self: flex-start; /* 🔥 KEY FIX */
+    margin-top: 2px;
   }
-  
-  .menu-items {
-    max-height: calc(100vh - 200px);
+
+  .menu-item-left img {
+    width: 72px;
+    height: 72px;
   }
 }
