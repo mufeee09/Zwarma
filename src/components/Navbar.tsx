@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import '../styles/Navbar.css';
 
+import img1 from "../images/Rectangle1.svg"
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +39,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <Link to="/" className="logo-container">
           <div className="logo-image">
-            <img src="/src/images/Rectangle 1.svg" alt="Zwarma Logo" />
+            <img src={img1} alt="Zwarma Logo" />
           </div>
           {/* <div className="logo-text">
             <h1>zwarma</h1>
