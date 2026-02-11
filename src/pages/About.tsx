@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { ChevronRight } from 'lucide-react';
 import '../styles/About.css';
+import img from '../images/IMG-20250204-WA0010.webp'
+import img1 from '../images/IMG-20250204-WA0011.webp'
+import img2 from '../images/IMG-20250204-WA0012.webp'
+import img3 from '../images/IMG-20250204-WA0013.webp'
 
 interface FAQItem {
   question: string;
@@ -60,24 +64,32 @@ const About = () => {
             flavors with a modern touch.
           </p>
         </div>
-        <div className="about-image"></div>
+        <div className="about-image">
+          <img src={img} alt="About Zwarma" />
+        </div>
       </section>
 
       <section className="our-mission">
         <h2>Our Mission</h2>
         <div className="mission-container">
           <div className="mission-item">
-            <div className="mission-icon quality"></div>
+            <div className="mission-icon">
+              <img src={img1} alt="Quality Icon" />
+            </div>
             <h3>Quality</h3>
             <p>We use only the freshest ingredients and authentic spices to create our dishes.</p>
           </div>
           <div className="mission-item">
-            <div className="mission-icon authenticity"></div>
+            <div className="mission-icon">
+              <img src={img2} alt="Authenticity Icon" />
+            </div>
             <h3>Authenticity</h3>
             <p>Our recipes stay true to traditional Middle Eastern cooking methods.</p>
           </div>
           <div className="mission-item">
-            <div className="mission-icon community"></div>
+            <div className="mission-icon">
+              <img src={img3} alt="Community Icon" />
+            </div>
             <h3>Community</h3>
             <p>We strive to create a welcoming environment for families and friends to gather.</p>
           </div>

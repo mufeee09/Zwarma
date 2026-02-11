@@ -52,14 +52,14 @@ const Menu = () => {
       category: 'Shawarma',
       image: img1,
     },
-    { id: 4, name: 'Falafel Wrap', price: 150, description: 'Crispy falafel with tahini sauce and pickles', category: 'Shawarma' },
-    { id: 5, name: 'Chicken Faham', price: 280, description: 'Grilled to perfection with Arabic spices', category: 'Faham' },
-    { id: 6, name: 'Mutton Faham', price: 350, description: 'Tender mutton pieces marinated in special herbs', category: 'Faham' },
-    { id: 7, name: 'Chocolate Milkshake', price: 130, description: 'Rich chocolate blended with premium ice cream', category: 'Milkshake' },
-    { id: 8, name: 'Vanilla Milkshake', price: 120, description: 'Smooth vanilla flavor with a creamy texture', category: 'Milkshake' },
-    { id: 9, name: 'Strawberry Milkshake', price: 130, description: 'Fresh strawberry flavor that delights', category: 'Milkshake' },
-    { id: 10, name: 'Sizzling Brownie', price: 180, description: 'Hot brownie with ice cream and chocolate sauce', category: 'Sizzlers' },
-    { id: 11, name: 'Vegetable Sizzler', price: 240, description: 'Assorted vegetables on a hot plate', category: 'Sizzlers' },
+    { id: 4, name: 'Falafel Wrap', price: 150, description: 'Crispy falafel with tahini sauce and pickles', category: 'Shawarma', image: img2 },
+    { id: 5, name: 'Chicken Faham', price: 280, description: 'Grilled to perfection with Arabic spices', category: 'Faham', image: img1 },
+    { id: 6, name: 'Mutton Faham', price: 350, description: 'Tender mutton pieces marinated in special herbs', category: 'Faham', image: img2 },
+    { id: 7, name: 'Chocolate Milkshake', price: 130, description: 'Rich chocolate blended with premium ice cream', category: 'Milkshake', image: img1 },
+    { id: 8, name: 'Vanilla Milkshake', price: 120, description: 'Smooth vanilla flavor with a creamy texture', category: 'Milkshake', image: img2 },
+    { id: 9, name: 'Strawberry Milkshake', price: 130, description: 'Fresh strawberry flavor that delights', category: 'Milkshake', image: img1 },
+    { id: 10, name: 'Sizzling Brownie', price: 180, description: 'Hot brownie with ice cream and chocolate sauce', category: 'Sizzlers', image: img2 },
+    { id: 11, name: 'Vegetable Sizzler', price: 240, description: 'Assorted vegetables on a hot plate', category: 'Sizzlers', image: img1 },
 
   ];
 
